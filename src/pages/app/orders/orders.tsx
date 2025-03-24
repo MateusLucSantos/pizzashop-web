@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
 
 import { OrdersTable } from "./orders-table";
+import { Pagination } from "@/components/pagination";
 
 export function Orders() {
   return (
@@ -18,6 +19,8 @@ export function Orders() {
         <div className="rounded-md border">
           <OrdersTable />
         </div>
+
+        <Pagination pageIndex={0} totalCount={105} perPage={10} />
       </div>
     </div>
   );
